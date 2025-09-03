@@ -3,10 +3,10 @@ using Voting.Domain.ValueObjects;
 
 namespace Voting.Repository
 {
-    public class Context : DbContext
+    public class VotingContext : DbContext
     {
 
-        public Context(DbContextOptions<Context> options) : base(options) { }
+        public VotingContext(DbContextOptions<VotingContext> options) : base(options) { }
 
         public DbSet<User> Users { get; set; }
         public DbSet<Votinge> Votings { get; set; }
