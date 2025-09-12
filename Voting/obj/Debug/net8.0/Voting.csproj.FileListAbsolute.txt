@@ -52,3 +52,4 @@ C:\Users\Rafael\Documents\Voting\Voting\obj\Debug\net8.0\refint\Voting.dll
 C:\Users\Rafael\Documents\Voting\Voting\obj\Debug\net8.0\Voting.pdb
 C:\Users\Rafael\Documents\Voting\Voting\obj\Debug\net8.0\Voting.genruntimeconfig.cache
 C:\Users\Rafael\Documents\Voting\Voting\obj\Debug\net8.0\ref\Voting.dll
+C:\Users\Rafael\Documents\Voting\Voting\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

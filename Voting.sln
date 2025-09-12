@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36212.18 d17.14
+VisualStudioVersion = 17.14.36212.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voting", "Voting\Voting.csproj", "{F006807F-8C50-4423-804A-DA64CE4F7812}"
 EndProject
@@ -10,6 +10,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voting.Repository", "Voting.Repository\Voting.Repository.csproj", "{4CD2BF45-B895-45B8-965D-07CE634BD769}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voting.Service", "Voting.Service\Voting.Service.csproj", "{AE8DF238-022C-4204-BDE5-6FDB5BFE405C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2DE34B63-F39D-4296-9FE9-385F095708FF} = {2DE34B63-F39D-4296-9FE9-385F095708FF}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
