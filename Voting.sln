@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.14.36212.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voting", "Voting\Voting.csproj", "{F006807F-8C50-4423-804A-DA64CE4F7812}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AE8DF238-022C-4204-BDE5-6FDB5BFE405C} = {AE8DF238-022C-4204-BDE5-6FDB5BFE405C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voting.Domain", "Voting.Domain\Voting.Domain.csproj", "{2DE34B63-F39D-4296-9FE9-385F095708FF}"
 EndProject

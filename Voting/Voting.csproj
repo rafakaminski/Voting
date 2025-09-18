@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Voting.Repository\Voting.Repository.csproj" />
+    <ProjectReference Include="..\Voting.Service\Voting.Service.csproj" />
   </ItemGroup>
 
 </Project>

@@ -393,6 +393,20 @@
         "runtime": {
           "bin/placeholder/Voting.Repository.dll": {}
         }
+      },
+      "Voting.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Voting.Domain": "1.0.0",
+          "Voting.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Voting.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Voting.Service.dll": {}
+        }
       }
     }
   },
@@ -1191,12 +1205,18 @@
       "type": "project",
       "path": "../Voting.Repository/Voting.Repository.csproj",
       "msbuildProject": "../Voting.Repository/Voting.Repository.csproj"
+    },
+    "Voting.Service/1.0.0": {
+      "type": "project",
+      "path": "../Voting.Service/Voting.Service.csproj",
+      "msbuildProject": "../Voting.Service/Voting.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Swashbuckle.AspNetCore >= 6.6.2",
-      "Voting.Repository >= 1.0.0"
+      "Voting.Repository >= 1.0.0",
+      "Voting.Service >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1233,6 +1253,9 @@
           "projectReferences": {
             "C:\\Users\\Rafael\\Documents\\Voting\\Voting.Repository\\Voting.Repository.csproj": {
               "projectPath": "C:\\Users\\Rafael\\Documents\\Voting\\Voting.Repository\\Voting.Repository.csproj"
+            },
+            "C:\\Users\\Rafael\\Documents\\Voting\\Voting.Service\\Voting.Service.csproj": {
+              "projectPath": "C:\\Users\\Rafael\\Documents\\Voting\\Voting.Service\\Voting.Service.csproj"
             }
           }
         }

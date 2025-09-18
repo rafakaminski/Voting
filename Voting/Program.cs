@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Voting.Repository;
+using Voting.Repository.Repository;
+using Voting.Service.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+builder.Services.AddScoped<VotesRepository>();
+builder.Services.AddScoped<VotesService>();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

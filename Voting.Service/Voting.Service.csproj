@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Voting.Domain\Voting.Domain.csproj" />
+    <ProjectReference Include="..\Voting.Repository\Voting.Repository.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -14,7 +14,7 @@ namespace Voting.Controllers
             _context = context;
         }
 
-        [HttpPost]
+        [HttpPost("voting")]
         public async Task<IActionResult> Create(Votinge voting)
         {
             _context.Votings.Add(voting);
@@ -22,7 +22,7 @@ namespace Voting.Controllers
             return CreatedAtAction(nameof(GetById), new { id = voting.Id }, voting);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("voting/{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var voting = await _context.Votings

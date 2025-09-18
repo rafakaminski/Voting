@@ -1,8 +1,74 @@
 [
   {
     "ContainingType": "Voting.Controllers.VotesController",
+    "Method": "Create",
+    "RelativePath": "votes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "OptionId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "VoteDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.PasswordHash",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Option.Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Option.Texto",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Option.Votes",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Voting.Domain.ValueObjects.Vote, Voting.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Voting.Controllers.VotesController",
     "Method": "GetVotesById",
-    "RelativePath": "{id}",
+    "RelativePath": "votes/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -17,8 +83,49 @@
   },
   {
     "ContainingType": "Voting.Controllers.VotingController",
+    "Method": "Create",
+    "RelativePath": "voting",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InitialDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Options",
+        "Type": "System.Collections.Generic.ICollection\u00601[[Voting.Domain.ValueObjects.Option, Voting.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Voting.Controllers.VotingController",
     "Method": "GetById",
-    "RelativePath": "{id}",
+    "RelativePath": "voting/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

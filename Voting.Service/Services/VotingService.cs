@@ -1,7 +1,9 @@
-﻿namespace Voting.Service.Services
-using Voting.Domain.ValueObjects;
+﻿using Voting.Domain.ValueObjects;
+using Voting.Repository.Interfaces;
+using Voting.Service.Interfaces;
+
+namespace Voting.Service.Services
 {
- 
     public class VotingService : IVotingService
     {
         private readonly IVotingRepository _votingRepository;
@@ -11,7 +13,7 @@ using Voting.Domain.ValueObjects;
         }
         public async Task<Votinge> CreateAsync(Votinge voting)
         {
-            return await _votingRepository.AddAsync(voting);
+            return await _votingRepository.CreateAsync(voting);
         }
         public async Task<Votinge> GetByIdAsync(int id)
         {

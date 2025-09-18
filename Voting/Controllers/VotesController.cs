@@ -14,22 +14,24 @@ namespace Voting.Controllers
             _context = context;
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Create(Vote vote)
+        [HttpPost("votes")]
+        public async Task<bool> Create(Vote vote)
         {
+            return new Service.Services.VotesService().CreateAsync(vote);
+
             // Verifica se usuário já votou nessa Option
-            bool alreadyVoted = await _context.Votes
-                .AnyAsync(v => v.UserId == vote.UserId && v.OptionId == vote.OptionId);
+            //bool alreadyVoted = await _context.Votes
+            //    .AnyAsync(v => v.UserId == vote.UserId && v.OptionId == vote.OptionId);
 
-            if (alreadyVoted)
-                return BadRequest("Usuário já votou nessa opção.");
-
-            _context.Votes.Add(vote);
-            await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetVotesById), new { id = vote.Id }, vote);
+            //if (alreadyVoted)
+            //    return BadRequest("Usuário já votou nessa opção.");
+ 
+            //_context.Votes.Add(vote);
+            //await _context.SaveChangesAsync();
+            //return CreatedAtAction(nameof(GetVotesById), new { id = vote.Id }, vote);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("votes/{id}")]
         public async Task<IActionResult> GetVotesById(int id)
         {
             var vote = await _context.Votes
